@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>水平垂直居中</title>
+    <link rel="stylesheet"  href="v-h-center.css">
+    <script>
+        document.addEventListener("DOMContentLoaded",function () {
+            var btn_pop = document.querySelector("#btn_pop");
+            var pop = document.querySelector("#pop_1");
+            btn_pop.addEventListener("click",function () {
+                pop.style.display = "block";
+                // pop.querySelector(".pop-box").style.display = "inline-block";
+            });
+            var pop_overlayView = document.querySelector(".pop-overlay");
+            pop_overlayView.addEventListener("click",function () {
+                pop.style.display = "none";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button id="btn_pop">弹出</button>
+    </div>
+    <div class="pop-container" id="pop_1">
+        <div class="pop-overlay"></div>
+        <div class="pop-box transform-pop">
+            <div class="pop-content">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
