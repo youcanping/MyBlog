@@ -146,8 +146,8 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: 我等的花儿都谢了
-  leave: 大爷别走
+  normal: 大圣巴巴的博客
+  leave: 大圣巴巴的博客
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false
