@@ -6,7 +6,7 @@
 title: 大圣巴巴的博客
 subtitle: 记录生活点滴，分享前端技术，学习新的知识，共同进步成长！
 description: 前端爱好者
-author: youcanping2008@163.com
+author: 游灿平
 language: zh-CN
 timezone:
 
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
+theme: indigo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,12 +80,3 @@ deploy:
   type: git
   repo: https://github.com/youcanping/youcanping.github.io.git
   branch: master
-#  backup blog source
-backup:
-    type: git
-    theme: maupassant
-    message: update blog source
-    repo: git@github.com:youcanping/youcanping.github.io.git
-    branch: BlogSource
-#       github: git@github.com:youcanping/youcanping.github.io.git,BlogSource
-#       gitcafe: git@github.com:youcanping/youcanping.github.io.git,BlogSource

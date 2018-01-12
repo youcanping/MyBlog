@@ -23,9 +23,12 @@ menu:
   github:
     url: https://github.com/youcanping
     target: _blank
-  link:
+  comments:
     text: 留言
     url: /message
+  thumbs-up:
+    text: 收藏
+    url: /collection
 
 # 你的头像url
 avatar: /img/ds.png
@@ -46,7 +49,6 @@ color: '#3F51B5'
 tags_title: 标签云
 archives_title: 归档
 categories_title: 分类
-
 # 文章截断
 excerpt_render: false
 excerpt_length: 200
@@ -78,8 +80,7 @@ toc:
   list_number: true  # 是否显示数字排序
 
 # 文章页留言内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-postMessage: 这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a>
-
+postMessage: 码字不易，转载请注明出处！
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
 
@@ -133,10 +134,10 @@ valine:
 canonical: false
 
 # 版权起始年份
-since_year: 2017-2018
+since_year: 2017-2027
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 路漫漫其修远兮，吾将上下而求索 #用户页面中作者相关的描述性文字，如不需要设为 false
+about: 每天记录一点点 #用户页面中作者相关的描述性文字，如不需要设为 false
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
@@ -145,8 +146,8 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: O(∩_∩)O
-  leave: /(ㄒoㄒ)/~~
+  normal: 我等的花儿都谢了
+  leave: 大爷别走
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false

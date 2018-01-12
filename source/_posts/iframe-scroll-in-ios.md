@@ -8,19 +8,19 @@ tags:
 categories:
 - html5
 ---
-### 问题描述
+## 问题描述
 最近在写移动端模块页面，需要嵌入三方的页面，该页面有上拉加载更多的功能，但是使用iframe嵌入到我的web app中出现了不能滚动的问题。    
 网上查询解决方式一直找不到很好的方式，无意中看到了一篇博客解决了我的燃眉之急，用很巧妙的方式化解了这个问题。    
 原文链接 [scroll-iframes-ios](https://davidwalsh.name/scroll-iframes-ios)
 
-### 解决方式
-1、在iframe外面包裹一个div。
+## 解决方式
+### 在iframe外面包裹一个div。
 ```html
 <div class="scroll-wrapper">
 	<iframe src=""></iframe>
 </div>
 ```
-2、给该div添加css触屏滚动属性。
+### 给该div添加css触屏滚动属性。
 ```css
 .scroll-wrapper {
 	-webkit-overflow-scrolling: touch;
@@ -33,7 +33,7 @@ categories:
 	/* 设置iframe的样式 */
 }
 ```
-3、我的页面需要全屏显示嵌入的页面，添加如下样式。
+### 我的页面需要全屏显示嵌入的页面，添加如下样式。
 ```css
 .scroll-wrapper {
     position: fixed;
