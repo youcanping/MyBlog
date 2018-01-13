@@ -15,8 +15,10 @@ toc: true
 1. [推酷技术周刊](https://www.tuicool.com/mags/)
 1. [奇舞周刊](https://weekly.75team.com/)
 #### 图片资源
-* [免费精美图库](https://www.hippopx.com)
+1. [免费精美图库](https://www.hippopx.com)
 #### 编程书籍
 1. [JavaScript中文网](https://www.javascriptcn.com/thread-2.html)
 1. [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
-****
+1. [【英】免费编程书籍笔记大全](http://goalkicker.com/)
+#### 项目相关
+1. [verdaccio npm私有仓库搭建](http://www.verdaccio.org/verdaccio/zh-Hans/)
