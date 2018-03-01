@@ -82,3 +82,8 @@ Hi youcanping! You've successfully authenticated, but GitHub does not provide sh
 
 ```
 
+6. 把公钥放到系统里[最佳答案]
+```bash
+> ssh-add ~/.ssh/id_rsa
+> Identity added: /Users/youcanping/.ssh/id_rsa (/Users/youcanping/.ssh/id_rsa)
+```

@@ -91,6 +91,6 @@ theme: indigo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://github.com/youcanping/youcanping.github.io.git
+  repo: git@github.com:youcanping/youcanping.github.io.git
   branch: master
 - type: baidu_url_submitter
