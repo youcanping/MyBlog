@@ -9,6 +9,7 @@ toc: true
 1. [CSS BEM 命名规范](https://segmentfault.com/a/1190000000391762)
 #### 前端资源
 1. [大前端工具集](https://github.com/nieweidong/fetool)
+1. [绿叶学习网](http://www.lvyestudy.com/)
 1. [廖雪峰的学习网站(JS,Python,Git)](https://www.liaoxuefeng.com/)
 1. [FRONT-END TECHNOLOGIES](https://uptodate.frontendrescue.org/)
 1. [百度WEB前端研发部](http://fex.baidu.com/weekly/)
