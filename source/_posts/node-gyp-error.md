@@ -2,9 +2,9 @@
 title: node-gyp error
 date: 2017-12-17 20:24:15
 tags: 
-- hexo
+- HEXO
 categories: 
-- node
+- NODE
 toc: true
 comments: true
 

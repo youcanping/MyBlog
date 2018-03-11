@@ -4,9 +4,9 @@ toc: true
 comments: true
 date: 2018-01-18 11:11:23
 tags:
-- JS精度问题
+- JS CALCULATE
 categories:
-- JavaScript
+- JAVASCRIPT
 ---
 
 > 我们在做JS浮点数计算的时候回出现各种奇怪的现象，出现精度问题，不是JS的问题，所有语言都有这个问题。

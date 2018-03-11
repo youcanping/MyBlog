@@ -4,10 +4,10 @@ toc: true
 comments: true
 date: 2018-01-15 14:32:34
 tags: 
- - webpack 
- - jQuery
+ - WEBPACK 
+ - JQUERY
 categories: 
- - webpack
+ - WEBPACK
 ---
 ## webpack引入jquery报错
 jQuery作为老牌的web前端利器已经好多年，虽然有很多人说jQuery性能低等，出现了很多替代品，但不可否认，对开发轻量级别的应用来说还是很好用，jQuery插件丰富，还是很令人割舍不下的。    
