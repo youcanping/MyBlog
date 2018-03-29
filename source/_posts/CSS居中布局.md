@@ -9,9 +9,9 @@ categories:
 - CSS
 ---
 网上查阅了关于CSS居中布局的方案，决定自己亲自验证下，不能只是体验在理论层面上，做下总结。     
-源码地址：[GITHUB](https://github.com/youcanping/github-demo/tree/master/align-layout)
+<!-- 源码地址：[GITHUB](https://youcanping.github.io/github-demo/tree/master/align-layout) -->
 ### 水平居中布局
-水平居中在线演示地址[DEMO](http://htmlpreview.github.io/?https://github.com/youcanping/github-demo/blob/master/align-layout/h-align-center/index.html)
+水平居中在线演示地址[DEMO](https://youcanping.github.io/github-demo/align-layout/h-align-center/index.html)
 #### 行内元素水平居中
 使用`text-align: center;`进行行内元素、文字水平居中。
 #### 块元素水平居中
