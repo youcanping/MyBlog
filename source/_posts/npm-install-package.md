@@ -18,6 +18,7 @@ categories:
 
 #### 全局安装权限问题
 全局安装一般都会遇到`permission denied`的报错，提示没有访问权限
+![](http://our9i4zgx.bkt.clouddn.com/Jietu20180331-225153.png)
 
 #####  解决方法
 1. `sudo npm install -g <package>`，以管理员身份运行
