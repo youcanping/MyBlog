@@ -119,6 +119,18 @@ npm uninstall 模块 --save-dev 删除模块，同时删除模块留在package.j
 * `minor`对应的`Y`，标识小改
 * `patch`对应的`Z`，标识补丁
 
+> 注意更新版本的时候，git工作区得先提交干净才允许提交
 
+```bash
+~ npm version patch
++ ycpy@1.0.1
+```
+
+#### NPM撤销发布的`package`
+```bash
+~ npm unpublish ycpy --force
+    npm WARN using --force I sure hope you know what you are doing.
+    - ycpy
+```
 
 
