@@ -17,8 +17,9 @@ toc: true
 1. [推酷技术周刊](https://www.tuicool.com/mags/)
 1. [奇舞周刊](https://weekly.75team.com/)
 1. [技术胖博客（全栈视频教程）](http://jspang.com/)
-#### 图片资源
+#### 设计资源
 1. [免费精美图库](https://www.hippopx.com)
+1. [搞定设计](https://www.gaoding.com/)
 #### 编程书籍
 1. [JavaScript中文网](https://www.javascriptcn.com/thread-2.html)
 1. [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
