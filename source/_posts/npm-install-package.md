@@ -21,12 +21,13 @@ categories:
 ![](http://our9i4zgx.bkt.clouddn.com/Jietu20180331-225153.png)
 
 #####  解决方法
-1. `sudo npm install -g <package>`，以管理员身份运行
+* `sudo npm install -g <package>`，以管理员身份运行
 
 ```bash
 > sudo npm install -g webpack-cli
 ```
-2. `sudo chown -R npm所在目录/{lib/node_modules,bin,share}`
+* `sudo chown -R npm所在目录/{lib/node_modules,bin,share}`
+
 官方推荐的做法，chown全称为change owner，即将npm目录的所有者指定为你的名字（授予权限），-R表示对指定目录下所有的子目录和文件也都采取同种操作。
 > 通过`npm config get prefix`获取所在目录的路径
 
@@ -37,7 +38,6 @@ categories:
 Password:
 ➜  ~ npm install -g webpack-cli
 ```
-
 ## 本地安装
 ### 安装生产环境依赖包
 > `npm install --save <package>`
@@ -83,20 +83,19 @@ npm uninstall 模块 --save-dev 删除模块，同时删除模块留在package.j
 ## 利用NPM发布包
 > 如果`NPM`设置的淘宝源需要修改回来，具体操作看我上一篇博文
 
-1. 添加用户
+### 添加用户
 > 添加用户名，输入密码和邮箱
 
 ```bash
 ~ npm adduser
 ```
-
-2. 登录
+### 登录
 > 已经添加过用户的，下次发布需要登录下
+
 ```bash
 ~ npm login
 ```
-
-3. 发布
+### 发布
 * 包的名称和版本就是你项目里package.json里的name和version
 * 包的名称不能和NPM已有的包重名
 * 包名不能有大写字母/空格/下滑线
