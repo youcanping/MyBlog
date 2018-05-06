@@ -65,3 +65,8 @@ var node = document.querySelector('#name');
         el.dispatchEvent(e);
     }
 ```
+
+### 效果展示
+
+<iframe height='265' scrolling='no' title='input-demo' src='//codepen.io/youcanping/embed/YLrBNW/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/youcanping/pen/YLrBNW/'>input-demo</a> by youcanping2008 (<a href='https://codepen.io/youcanping'>@youcanping</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
