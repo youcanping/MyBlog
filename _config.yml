@@ -7,12 +7,12 @@ title: 大圣巴巴的博客
 subtitle: 记录生活点滴，分享前端技术，学习新的知识，共同进步成长！
 description: 前端爱好者
 author: 大圣巴巴
-language: zh-C
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: "http://youcanping2008.coding.me"
+url: "https://youcanping.coding.me"
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -94,5 +94,5 @@ deploy:
   repo: git@github.com:youcanping/youcanping.github.io.git
   branch: master
 - type: git
-  repo: git@git.coding.net:youcanping2008/youcanping2008.git
-  branch: coding-pages
+  repo: https://git.coding.net/youcanping/youcanping.git
+  branch: master
