@@ -5,6 +5,7 @@ comments: true
 date: 2018-05-13 22:01:51
 tags:
 - IFRAME
+- iOS iframe width
 categories:
 - HTML5
 ---
@@ -46,4 +47,52 @@ categories:
 ```html
 <meta name="viewport" content="width=640,initial-scale=0.5,maximum-scale=0.5, minimum-scale=0.5,user-scalable=no">
 ```
+
+### `iframe`在`iOS`部分机型宽度问题
+#### 问题描述
+`iframe`嵌入的页面有横向滚动模块，使用了`overflow-x: auto;`样式，这个时候嵌入页面的宽度会撑大页面，导致`iframe`出现了横向滚动。      
+<img src="http://our9i4zgx.bkt.clouddn.com/QQ20180514-222410.gif" style="width:320px;">
+
+#### 解决方式
+```html
+<div style="overflow: auto;-webkit-overflow-scrolling:touch;width:100%;height:100%;">
+    <iframe src="http://h5.m.taopiaopiao.com" frameborder="0" height="100%" scrolling='no' style="width: 1px; min-width: 100%; *width: 100%;"></iframe>
+  </div>
+```
+### 移动端`iframe`终极方案
+```css
+         .iframe-container{
+             position: fixed;
+             top: 0;
+             left: 0;
+             z-index: auto;
+             overflow: auto;
+             -webkit-overflow-scrolling:touch;
+             width:100%;
+             height:100%;
+         }
+         .iframe-container iframe{
+             width: 1px;
+             *width: 100%;
+             min-width: 100%;
+             /*width: 100%;*/
+             /*height: 100%;*/
+         }
+```
+```html
+    <!--height="100%"要写在行内，写在class中不生效-->
+    <iframe src="https://h5.m.taopiaopiao.com" scrolling='no' frameborder="0" height="100%"></iframe>
+```
+![](http://our9i4zgx.bkt.clouddn.com/QQ20180514-223503@2x.png)
+
+
+
+
+ 
+       
+      
+
+
+
+
 
