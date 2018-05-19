@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+- 9.3.0
+cache:
+  directories:
+  - node_modules
+before_install:
+- npm install hexo-cli -g
+install:
+- npm install
+script:
+- hexo clean
+- hexo generate
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "youcanping"
+  - git config user.email "youcanping2008@163.com"
+  - git add .
+  - git commit -m "TravisCI 自动部署"
+  # Github Pages
+  - git push --force --quiet "https://${CI_TOKEN}@${GH_REF}" master:master
+  # Coding Pages
+  - git push --force --quiet "https://youcanping:${CO_TOKEN}@${CO_REF}" master:master
+
+branches:
+  only:
+  - dev   #这里替换你要监听的分支
+
+env:
+ global:
+   # Github Pages
+   - GH_REF: github.com/youcanping/youcanping.github.io.git # https://github.com/youcanping/youcanping.github.io.git
+   # Coding Pages
+   - CO_REF: git.coding.net/youcanping/youcanping.git # https://git.coding.net/youcanping/youcanping.git
