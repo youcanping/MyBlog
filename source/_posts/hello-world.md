@@ -40,4 +40,10 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 $ hexo deploy
 ```
 
+```js
+for(var i=0; i< 10; i++) {
+    console.log(1);
+}
+```
+
 More info: [Deployment](https://hexo.io/docs/deployment.html)
