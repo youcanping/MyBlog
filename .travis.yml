@@ -25,7 +25,7 @@ after_script:
 
 branches:
   only:
-  - dev   #这里替换你要监听的分支
+  - master   #这里替换你要监听的分支
 
 env:
  global:
