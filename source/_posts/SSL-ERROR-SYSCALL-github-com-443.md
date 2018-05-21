@@ -4,8 +4,8 @@ toc: true
 comments: true
 date: 2018-03-01 16:43:39
 tags:
-- GIT
-- GITHUB
+- git
+- GitHub
 categories:
 - GIT
 ---

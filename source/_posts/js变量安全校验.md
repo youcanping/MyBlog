@@ -3,8 +3,8 @@ title: js变量空值校验
 toc: true
 comments: true
 date: 2017-12-20 16:53:16
-tags: 变量校验
-categories: JAVASCRIPT
+tags: js变量校验
+categories: JavaScript
 ---
 
 ### js判断变量空值的方法有

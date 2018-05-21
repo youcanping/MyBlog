@@ -1,10 +1,10 @@
 ---
-title: NPM安装包
+title: NPM安装与卸载包
 toc: true
 comments: true
 date: 2018-03-30 15:33:45
 tags:
-- NPM
+- npm包管理
 categories:
 - NPM
 ---

@@ -2,8 +2,8 @@
 title: 'ssh Permission denied '
 toc: true
 date: 2017-12-20 14:27:41
-tags: HEXO 
-categories: NODE
+tags: hexo
+categories: node
 comments: true
 ---
 

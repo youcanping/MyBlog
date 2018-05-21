@@ -4,12 +4,12 @@ toc: true
 comments: true
 date: 2018-05-06 23:57:07
 tags:
-- COMPOSTIONSTART
-- COMPOSTIONEND
-- INPUT
+- compostionstart
+- compostionend
+- input
 categories:
 - HTML5
-- JAVASCRIPT
+- JavaScript
 ---
 
 我们在处理input输入框实时输入状态时，一般都是绑定`input`事件，但是在中文输入法下，会出现拼音在输入框中也会触发`input`事件，并不是我们选择完汉子后触发输入事件，出现这种bug在某些应用场景就显得不那么优化，如根据用户输入内容实时查询信息，输入框中的拼音并不是我们想要查询的关键字，那如何只在用户选择汉子后触发`input`事件呢？         
