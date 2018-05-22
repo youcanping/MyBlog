@@ -1,5 +1,5 @@
 ---
-title: JavaScript学习笔记-基本概念
+title: JavaScript学习笔记-基础知识
 toc: true
 comments: true
 date: 2018-05-21 15:20:26
@@ -100,6 +100,79 @@ o instanceof C // true
          // todo
     }
 ```
+
+## Booloean类型
+### 转换规则
+|数据类型|true|false|
+|:--|:--|:--|
+|String|非空字符串|`""`|
+|Number|非0数字|`0`|
+|Object|非空指针对象|`null`|
+|Undefined|不适用n/a|`undefined`|
+> 总结：`""`、`0`、`undefined`、`null` 都为`false`，反之为`true`;
+```js
+    Boolean("abc"); // true
+    Boolean(""); // false
+    Boolean(1); // true
+    Boolean(0); // false
+    Boolean(void 0); // false
+    Boolean({}); // true
+```
+### 布尔操作符转换规则
+> 对`非Boolean类型`的值进行2次取反得到`boolean`值，第一个操作符对操作数进行布尔值转换然后取反，第二个操作数得到该值的真正`boolean`值。
+```js
+    !!'A'; // true
+    !!''; // false
+    !!0; // false
+    !!(void 0); // false
+    !!{}; // true
+```
+
+## Number类型
+* 正无穷大 `Number.POSITIVE_INFINITY`，`Infinity`；
+* 负无穷大 `Number.NEGATIVE_INFINITY`，`-Infinity`；
+* 最大值 `Number.MAX_VALUE`；
+* 最小值 `Number.MIN_VALUE`；
+* 判断数值是否在有效范围 `isFinite()`；
+* `Number`转换字符串，如果字符串包含无效数值返回`NaN`;
+* `Number`转换的值是`undefined`，返回`NaN`;
+* `Number`转换的是对象，先找`valueOf()`方法取值，没有再找`toString()`方法取值
+
+> * **`1/0`不会报错，返回`Infinity`**；
+> * **`0/0`不会报错，返回`NaN`**；
+> * **一元加操作符`+`，和`Number`函数相同**;
+> * **`Number('123A')`返回`NaN`，而`parseInt('123A')`返回`123`**;
+> * 无论什么时候使用`parseInt()`都需要制定第二个参数基数，表明转换十进制如`parseInt('076', 10)`，否则会按照八进制处理；
+
+```js
+var a = 2 - 'A'; // NaN
+var b = Number('A'); //NaN
+var obj = {
+    valueOf: function () {
+        console.log('valueOf');
+        return 'A'
+    },
+    toString: function () {
+        console.log('toString');
+        return '1'
+    }
+}
+Number(obj); // => NaN ,再没有valueOf方法的前提下才会调用toString方法。
+```
+
+### NaN
+> NaN （not a number） 即非数值
+
+* `NaN`与任何值不相等，包括自己；
+* `NaN`参与的运算返回的都是`NaN`;
+* `isNaN()`函数用于判断值是否是有效数字，引用类型则调用先`valueOf`方法取值，没有则调用`toString()`取值，同`Number()`。
+* **`0/0`不会报错，返回`NaN`**;
+
+```js
+isNaN({}); //true
+isNaN({valueOf:function(){return 123}}); // false;
+```
+
 
 
 
