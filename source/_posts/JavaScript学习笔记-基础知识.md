@@ -129,14 +129,17 @@ o instanceof C // true
 ```
 
 ## Number类型
+### 数值范围
 * 正无穷大 `Number.POSITIVE_INFINITY`，`Infinity`；
 * 负无穷大 `Number.NEGATIVE_INFINITY`，`-Infinity`；
 * 最大值 `Number.MAX_VALUE`；
 * 最小值 `Number.MIN_VALUE`；
 * 判断数值是否在有效范围 `isFinite()`；
+### 数值转换
+* `Number()`能转换任何类型，`parseInt()`，`parseFloat()`只能转换字符串。
 * `Number`转换字符串，如果字符串包含无效数值返回`NaN`;
 * `Number`转换的值是`undefined`，返回`NaN`;
-* `Number`转换的是对象，先找`valueOf()`方法取值，没有再找`toString()`方法取值
+* `Number`转换的是对象，先找`valueOf()`方法取值，没有再找`toString()`方法取值；
 
 > * **`1/0`不会报错，返回`Infinity`**；
 > * **`0/0`不会报错，返回`NaN`**；
@@ -158,6 +161,8 @@ var obj = {
     }
 }
 Number(obj); // => NaN ,再没有valueOf方法的前提下才会调用toString方法。
+parseInt("123abc"); // => 123
+Number('123abc'); // => NaN
 ```
 
 ### NaN
@@ -166,6 +171,7 @@ Number(obj); // => NaN ,再没有valueOf方法的前提下才会调用toString�
 * `NaN`与任何值不相等，包括自己；
 * `NaN`参与的运算返回的都是`NaN`;
 * `isNaN()`函数用于判断值是否是有效数字，引用类型则调用先`valueOf`方法取值，没有则调用`toString()`取值，同`Number()`。
+* `NaN`参与的比较返回的都是`false`;
 * **`0/0`不会报错，返回`NaN`**;
 
 ```js
