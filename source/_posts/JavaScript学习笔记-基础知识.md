@@ -165,7 +165,7 @@ parseInt("123abc"); // => 123
 Number('123abc'); // => NaN
 ```
 
-### NaN
+## NaN
 > NaN （not a number） 即非数值
 
 * `NaN`与任何值不相等，包括自己；
