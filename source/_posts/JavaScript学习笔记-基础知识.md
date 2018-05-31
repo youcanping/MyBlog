@@ -135,6 +135,7 @@ o instanceof C // true
 * 最大值 `Number.MAX_VALUE`；
 * 最小值 `Number.MIN_VALUE`；
 * 判断数值是否在有效范围 `isFinite()`；
+
 ### 数值转换
 * `Number()`能转换任何类型，`parseInt()`，`parseFloat()`只能转换字符串。
 * `Number`转换字符串，如果字符串包含无效数值返回`NaN`;
