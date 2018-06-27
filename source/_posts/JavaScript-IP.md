@@ -7,7 +7,6 @@ tags:
 - JavaScript 获取IP地址
 categories:
 - JavaScript
-- IP
 ---
 
 > [前端WEB获取IP地址问题](https://segmentfault.com/q/1010000010330099)
