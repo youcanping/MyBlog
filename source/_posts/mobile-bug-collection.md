@@ -26,6 +26,12 @@ document.body.addEventListener('touchstart', function () { //...空函数即可}
 ## 监听文档是否处于激活状态
 ### 解决方法
 使用H5新的监听文档可见状态事件`visibilityChange`判断当前页面是否处于激活状态
+### visibilityChange事件触发条件
+* `PC`端浏览器的标签页切换。
+* `PC`端浏览器最大化最小化，`Opera`例外。
+* 移动端锁屏。
+* 移动端进入后台和进入前台。
+* 移动端浏览器TAB切换。
 * 方式一
 ```js
 var hiddenProperty = 'hidden' in document ? 'hidden' :
